@@ -23,7 +23,7 @@ selpg -s=Number -e=Number [options] [filename]
 * If filename is not given, read input from stdin. and Ctrl+D to cut out.
 
 ## Example
-* ```./selpg -s=0 -e=0 -l=10 text.txt```
+* ```./selpg -s 0 -e 0 -l 10 text.txt```
 ```shell
 This is the line 1
 This is the line 2
@@ -37,7 +37,7 @@ This is the line 9
 This is the line 10
 ```
 
-* ```./selpg -s=1 -e=1 -l=4 < text.txt```
+* ```./selpg -s 1 -e 1 -l 4 < text.txt```
 ```shell
 This is the line 5
 This is the line 6
@@ -45,7 +45,7 @@ This is the line 7
 This is the line 8
 ```
 
-* ```./selpg -s=1 -e=1 -l=4 text.txt >output.txt```
+* ```./selpg -s 1 -e 1 -l 4 text.txt >output.txt```
 ```shell
 output.txt:
 This is the line 5
@@ -54,7 +54,7 @@ This is the line 7
 This is the line 8
 ```
 
-* ```./selpg -s=0 -e=0 -f text.txt```
+* ```./selpg -s 0 -e 0 -f text.txt```
 ```shell
 This is the line 1
 This is the line 2
@@ -97,14 +97,14 @@ This is the line 5
 This is the line 6
 ```
 
-* ```./selpg -s=1 -l=3 test.txt>output 2 > error```
+* ```./selpg -s 1 -l 3 test.txt>output 2 > error```
 （显示错误信息）
 ```shell
 not enough arguments
 2nd arg should be -eend_page
 ```
 
-* ```./selpg -s=4 -e=1 -l=10 test.txt>output 2 > error```
+* ```./selpg -s 4 -e 1 -l 10 test.txt>output 2 > error```
 （显示错误信息）
 ```shell
 The range of the page is invalid
